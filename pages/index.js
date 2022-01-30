@@ -5,6 +5,7 @@ import ProductGrid from '../components/ProductGrid'
 
 
 
+
 export default function Home() {
   return (
     <div>
@@ -14,7 +15,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+
       <ProductGrid />
+      
 
     
     </div>

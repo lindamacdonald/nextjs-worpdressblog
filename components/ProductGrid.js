@@ -1,39 +1,39 @@
 import { useState } from "react";
 import products from "./products.json"
-import Button from "./Button";
+
 
 export default function ProductGrid() {
   return (
     <>
       <div className="lg:px-20 md:px-6 px-4 py-12">
-        <h1 className="lg:text-4xl md:text-2xl text-xl font-medium lg:leading-9 md:leading-6 leading-4 text-gray-800">Shop All</h1>
-        <p className="text-base leading-6 mt-4 text-gray-600">
-          It is a long established fact that a reader will be distracted by the readable
+        <h1 className="lg:text-4xl md:text-2xl text-xl font-medium lg:leading-9 md:leading-6 leading-4 text-slate-900">Shop All</h1>
+        <p className="text-base leading-6 mt-4 text-slate-900">
+          Shopaholics beware! This is just a demosite so unfortunately these goodies aren't really for sale 
           <br className="md:block hidden" />
           content of a page when looking at its layout.
         </p>
         <div className="mt-8 flex items-center md:justify-start justify-between md:space-x-4">
           <div className="sm:w-28 w-24 h-9 cursor-pointer hover:bg-gray-800 bg-gray-800 flex items-center justify-center">
-            <p className="text-white text-sm leading-none">All Products</p>
+            <p className="text-white text-sm leading-none cursor-pointer">All Products</p>
           </div>
-          <div className="sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-gray-100 flex items-center justify-center">
-            <p className="text-gray-800 group-hover:text-white text-sm leading-none">Seating</p>
+          <div className="sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-transparent flex items-center justify-center">
+            <p className="text-gray-800 group-hover:text-white text-sm leading-none cursor-pointer">Seating</p>
           </div>
-          <div className="sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-gray-100 flex items-center justify-center">
-            <p className="text-gray-800 group-hover:text-white text-sm leading-none">Tables</p>
+          <div className="sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-transparent flex items-center justify-center">
+            <p className="text-gray-800 group-hover:text-white text-sm leading-none cursor-pointer">Tables</p>
           </div>
-          <div className="sm:flex hidden sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-gray-100 flex items-center justify-center">
-            <p className="text-gray-800 group-hover:text-white text-sm leading-none">Storage</p>
+          <div className="sm:flex hidden sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-base-100 flex items-center justify-center">
+            <p className="text-gray-800 group-hover:text-white text-sm leading-none cursor-pointer">Storage</p>
           </div>
-          <div className="sm:flex hidden sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-gray-100 flex items-center justify-center">
-            <p className="text-gray-800 group-hover:text-white text-sm leading-none">Accessories</p>
+          <div className="sm:flex hidden sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-transparent flex items-center justify-center">
+            <p className="text-gray-800 group-hover:text-white text-sm leading-none cursor-pointer">Accessories</p>
           </div>
         </div>
         <div className="mt-4 flex items-center justify-between sm:hidden">
-          <div className="sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-gray-100 flex items-center justify-center">
-            <p className="text-gray-800 group-hover:text-white text-sm leading-none">Storage</p>
+          <div className="sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-transparent flex items-center justify-center">
+            <p className="text-gray-800 group-hover: transition-transform duration-700 ease-in-out text-white text-sm leading-none">Storage</p>
           </div>
-          <div className="sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-gray-100 flex items-center justify-center">
+          <div className="sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-transparent flex items-center justify-center">
             <p className="text-gray-800 group-hover:text-white text-sm leading-none">Accessories</p>
           </div>
           <div className="sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-gray-100 flex items-center justify-center">
@@ -41,21 +41,9 @@ export default function ProductGrid() {
           </div>
         </div>
         <div className="mt-4 items-center sm:space-x-4 flex sm:justify-start justify-between">
-          <div className="sm:flex hidden sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-gray-100 flex items-center justify-center">
-            <p className="text-gray-800 group-hover:text-white text-sm leading-none">Oak</p>
-          </div>
-          <div className="sm:flex hidden sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-gray-100 flex items-center justify-center">
-            <p className="text-gray-800 group-hover:text-white text-sm leading-none">Beech</p>
-          </div>
-          <div className="sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-gray-100 flex items-center justify-center">
-            <p className="text-gray-800 group-hover:text-white text-sm leading-none">Walnut</p>
-          </div>
-          <div className="sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-gray-100 flex items-center justify-center">
-            <p className="text-gray-800 group-hover:text-white text-sm leading-none">Ash</p>
-          </div>
-          <div className="sm:w-28 w-24 h-9 cursor-pointer group hover:bg-gray-800 bg-gray-100 flex items-center justify-center">
-            <p className="text-gray-800 group-hover:text-white text-sm leading-none">Not wood</p>
-          </div>
+          
+          
+          
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 mt-6 gap-8">
           <div className="lg:w-72 md:pr-8 sm:block hidden" />
@@ -68,16 +56,26 @@ export default function ProductGrid() {
             </svg>
           </p>
         </div>
+        
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6 gap-8">
             {products.map(product => {
                 return (
-                <div key={product.id} className="lg:w-72 md:pr-8">
-                <img src={product.image} alt="table image" className="w-full" />
-                <p className="text-sm font-medium leading-none mt-3 text-gray-800">{product.title}</p>
-                <p className="text-xs font-medium leading-3 text-gray-600 mt-2">{product.price}</p>
-                < Button />
-                </div>
+                  <div className=" relative">
+                     
+                <div key={product.id} className="relative group">  
                
+                <div className=" flex justify-center items-center opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50"></div>  
+                <img className=" cursor-pointer w-full" src={product.image} alt="A girl wearing white suit and googgles" />
+                <div className=" absolute bottom-0 p-8 w-full opacity-0 group-hover:opacity-100">
+                     <button className=" font-medium text-base leading-4 text-white bg-slate-900 py-3 w-full">Add to bag</button>
+                     <button className=" bg-transparent font-medium text-base leading-4 py-3 w-full mt-2 text-white"></button>
+                </div>
+                <p className="text-md font-medium leading-none mt-3 text-gray-800">{product.title}</p>
+                <p className="text-md font-medium leading-3 text-gray-600 mt-2">{product.price}</p>
+                </div>
+                               
+                </div>
+                
                     )
             })}  
             

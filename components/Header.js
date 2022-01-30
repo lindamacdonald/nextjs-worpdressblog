@@ -5,12 +5,12 @@ export default function Header() {
     const [showMenu, setShowMenu] = useState(false);
 
     return (
-        <div className="dark:bg-gray-900">
+        <div className="dark:bg-gray-900 sticky top-0 z-40 bg-base-100">
             <div className="container mx-auto relative">
                 <div className="py-4 mx-4 md:mx-6">
-                    <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-4 md:w-full">
+                    <div className="flex items-center justify-between border-b border-slate-900 dark:border-gray-700 pb-4 md:w-full">
                         <div className="md:hidden" />
-                        <div role="img" aria-label="Luxe. Logo." className="cursor-pointer">
+                        <div role="img" aria-label="Linda. Logo." className="cursor-pointer">
                             <div className="hidden lg:block">
                                 <svg className="fill-stroke text-gray-800 dark:text-white" width={55} height={25} viewBox="0 0 55 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
